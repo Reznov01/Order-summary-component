@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="./src/output.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | Order summary card</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        position: fixed;
+        bottom: 0;
+        left: 30%;
+        right: 30%;
+        font-size: 11px;
+        text-align: center;
+        color: black;
+      }
+      .attribution a {
+        color: hsl(225, 79%, 45%);
+      }
+    </style>
+  </head>
+  <body class="bg-Pale-blue text-white font-Red-hot">
+    <main>
+      <section>
+        <article class="w-screen h-screen">
+          <img
+            src="./images/pattern-background-desktop.svg"
+            class="w-full hidden sm:block absolute top-0"
+          />
+          <img
+            src="./images/pattern-background-mobile.svg"
+            class="w-full block sm:hidden"
+          />
+          <div
+            class="absolute w-[355px] rounded-xl text-black bg-white top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 shadow-[0_35px_60px_-15px_rgba(0,0,0,0.2)]"
+          >
+            <img src="./images/illustration-hero.svg" class="rounded-t-xl" />
+            <h2 class="text-[28px] font-bold text-center py-6">
+              Order Summary
+            </h2>
+            <p class="text-center text-[18px] text-Dark-blue">
+              You can now listen to millions of songs, audiobooks, and podcasts
+              on any device anywhere you like!
+            </p>
+            <div class="flex px-3 py-8 w-[90%] m-auto">
+              <div class="w-3 flex-1">
+                <img src="./images/icon-music.svg" alt="icon music" />
+              </div>
+              <div class="flex-1">
+                <p class="font-bold">Annual Plan</p>
+                <p class="text-Dark-blue">$59.99/year</p>
+              </div>
+              <div class="flex-1 text-center m-auto">
+                <a
+                  class="text-Change-Color font-bold cursor-pointer hover:text-Change-color-hover"
+                >
+                  Change
+                </a>
+              </div>
+            </div>
+            <div class="text-black w-full flex items-center justify-center">
+              <button
+                class="bg-Bright-blue w-[90%] h-14 text-white font-bold rounded-xl hover:bg-Buton-hover"
+              >
+                Proceed to Payment
+              </button>
+            </div>
+            <p
+              class="text-Desaturated-blue font-bold text-center text-[18px] w-[130px] mx-auto my-10 cursor-pointer hover:text-black"
+            >
+              Cancel Order
+            </p>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Rafael Conse</a>.
+    </div>
+  </body>
+</html>
